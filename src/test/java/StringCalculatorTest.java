@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class StringCalculatorTest {
     @Test
     public void negativesThrow() {
-        assertThrows(Exception.class, () -> StringCalculator.add("-1,5"));
+        assertThrows(IllegalArgumentException.class, () -> StringCalculator.add("-1,5"));
     }
 
     @Test
